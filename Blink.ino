@@ -22,8 +22,11 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
+  
+  // Changement de la fréquence de clignotement de la led de la carte de 2 Hz à 1 Hz
   digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);              // wait for a second
+  delay(500);              // wait for a second
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);              // wait for a second
+  delay(500);              // wait for a second
+  // Fin de la modification
 }
