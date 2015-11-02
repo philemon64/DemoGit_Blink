@@ -18,6 +18,8 @@
 void setup() {
   // initialize digital pin 13 as an output.
   pinMode(13, OUTPUT);
+  // Ajout 2ème led clignotante
+  pinMode(9, OUTPUT);
 }
 
 // the loop function runs over and over again forever
@@ -29,4 +31,12 @@ void loop() {
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
   delay(500);              // wait for a second
   // Fin de la modification
+
+  // Ajout 2ème led clignotante
+  digitalWrite(9, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(50);              // wait for a second
+  digitalWrite(9, LOW);   // turn the LED off by making the voltage LOW
+  delay(30);
+  // Fin Ajout
+  
 }
